@@ -19,23 +19,35 @@ void choose_your_limit_message()
 	printf("Choose your limit :\n");
 }
 
+void print_result(int table , int limit)
+{
+	int i;
+	for (i = 0; i < limit; i++)
+	{
+		printf("%d x %d  = %d \n", table, i , table*i);
+		/* code */
+	}
+
+
+}
+
 
 int multiplication()
 {
 	// variables
-	int my_table;
+	int my_table = 0 ;
 	int my_limit;
-	int i;
+	//int i;
 	choose_your_table_message();
 	scanf("%d",&my_table);
 	choose_your_limit_message();
 	scanf("%d", &my_limit);
-	for (i = 0; i < my_limit; i++)
-	{
-		printf("%d x %d  = %d \n", my_table, i , my_table*i);
+	//for (i = 0; i < my_limit; i++)
+	//{
+	//	printf("%d x %d  = %d \n", my_table, i , my_table*i);
 		/* code */
-	}
-
+	//}
+	print_result(my_table,my_limit);
 	return 0;
 }
 
