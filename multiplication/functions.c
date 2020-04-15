@@ -1,6 +1,6 @@
 #include"functions.h"
 
-// print some messages about multiplication table
+
 
 void welcome_message()
 {
@@ -36,7 +36,7 @@ int multiplication()
 {
 	// variables
 	int my_table = 0 ;
-	int my_limit;
+	int my_limit = 0;
 	//int i;
 	choose_your_table_message();
 	scanf("%d",&my_table);
