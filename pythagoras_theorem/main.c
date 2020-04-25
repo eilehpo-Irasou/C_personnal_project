@@ -13,7 +13,7 @@ void what_length()
 
 void verify_number(double number)
 {
-	if (number <= 1 ||  number >=9)
+	if (number >= 1 ||  number <=9)
 	{
 		printf("This is a number \n");
 		/* code */
