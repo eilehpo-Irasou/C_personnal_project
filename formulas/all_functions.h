@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+/***************** AREAS ****************/
 
 /* Area for squares : side*side */
 double square_area(double side);
@@ -29,3 +30,7 @@ double cone_area(double radius, double slang_height) ;
 
 /* Area for spheres : 4*(M_PI)*(radius*radius); */
 double sphere_area(double radius);
+
+/********************************************************************/
+
+/********************** VOLUMES *************************************/
