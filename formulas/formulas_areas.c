@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 /*** Formulas for areas
 - square
 - rectangle
@@ -7,28 +8,73 @@
 
 */
 
-int square_area(int side)
+double square_area(double side)
 {
-	int area = 0;
+	double area = 0;
 	area = side*side;
 	return area;
 }
 
-int rectangle_area(int length, int width)
+double rectangle_area(double length, double width)
 {
-	int area = 0;
+	double area = 0;
 	area = length * width;
 	return area;
 
 }
 
-int triangle_area(int base,int height)
+double triangle_area(double base,double height)
 {
-	int area = 0 ; 
+	double area = 0 ; 
 	area = (base*height)/2;
 	return area;
 }
 
+double losange_area(double bigD, double littleD)
+{
+	double area = 0 ; 
+	area = (bigD*littleD)/2;
+	return area;
+}
+
+double trapeze_area(double bigbase, double littlebase, double height )
+{
+	double area = 0;
+	area = ((bigbase+littlebase)/2);
+	return area ;
+}
+
+double regular_polygon(double perimeter, double apothem)
+{
+	double area = 0;
+	area = (perimeter/2)*apothem;
+	return area ;
+}
+
+double circle_area(double radius)
+{
+	double area = 0;
+	area = (M_PI)*(radius*radius);
+	return area;
+
+}
+
+double cone_area(double radius, double slang_height)
+{
+	double area = 0 ; 
+	area = (M_PI)*radius*slang_height;
+	return area ;
+}
+
+double sphere_area(double radius)
+{
+	double area = 0;
+	area = 4*(M_PI)*(radius*radius);
+	return area ;
+}
+
+
+/*
 int menu(int action )
 {
 	int a ;
@@ -43,7 +89,7 @@ int menu(int action )
 		{
 			square_area(a);
 			printf("%d\n", square_area(a));
-			/* code */
+			
 		}
 		else
 		{
@@ -60,7 +106,7 @@ int menu(int action )
 
 	return 0;
 }
-
+*/
 
 
 int main(int argc, char const *argv[])
@@ -72,8 +118,8 @@ int main(int argc, char const *argv[])
 // i write 1 , it works.
 // if It is zero or a another number. you can compile but nothing 's happened.
 
-menu(1);
-	
+//menu(1);
+	printf("area of circle %.10f m²\n", circle_area(4) );
 	
 	
 	/*int c = rectangle_area(2,9);
