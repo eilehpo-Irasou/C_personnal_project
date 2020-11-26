@@ -1,12 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include "all_functions.h"
 /*** Formulas for areas
 - square
 - rectangle
-- 
-
+- triangle
+- losange
+- trapeze
+- regular polygon
+- circle
+- cone
+- sphere
 */
+
+
 
 double square_area(double side)
 {
