@@ -1,5 +1,5 @@
 #include "all_functions.h"
-/*** Formulas for areas
+/* Formulas for areas :
 - square
 - rectangle
 - triangle

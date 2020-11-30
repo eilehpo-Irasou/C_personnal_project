@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
+
+// for windows users */
+/* for PI */
+#define _USE_MATH_DEFINES 
+
+/***************************************/
+
 /***************** AREAS ****************/
 
 /* Area for squares : side*side */
@@ -34,3 +41,4 @@ double sphere_area(double radius);
 /********************************************************************/
 
 /********************** VOLUMES *************************************/
+
